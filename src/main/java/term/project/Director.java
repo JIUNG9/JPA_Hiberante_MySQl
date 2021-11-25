@@ -22,8 +22,8 @@ public class Director extends MovieWorker{
 	//@Id
 	//@GeneratedValue(strategy = GenerationType.IDENTITY)
 	public String HomeTown;
-	
-	
+
+
 	
 	
 }

@@ -1,9 +1,9 @@
 package term.project;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,8 +22,15 @@ public class Actor extends MovieWorker {
 //@Id
 //@GeneratedValue(strategy = GenerationType.IDENTITY)
 //private int Id;
-private int height;
-private String InstaID;
-private boolean IsMain;
 	
+private int height;
+//@GeneratedValue(strategy = GenerationType.IDENTITY)
+//@Column(name = "InstaID", unique = true, nullable = false, insertable = false, updatable = false)
+private String InstaID;
+private String isMain;
+
 }
+	
+
+
+
